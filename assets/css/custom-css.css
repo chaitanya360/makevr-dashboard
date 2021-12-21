@@ -1,0 +1,32 @@
+thead {
+  position: sticky;
+  top: -15px;
+  background-color: #e14eca;
+  z-index: 99;
+}
+
+.logo {
+  width: 150px;
+  margin: auto;
+}
+
+.custome-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.custome-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.custome-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #e14eca;
+}
+
+footer {
+  display: none;
+}
