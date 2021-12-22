@@ -1,6 +1,6 @@
 faker.locale = "en_IND";
 
-let count = 650;
+let count = 512;
 
 const users = [];
 
@@ -16,6 +16,7 @@ const getNewGeneratedUser = () => {
   const email = faker.internet.email(); // Rusty@arne.info
   const totalTours = Math.round(Math.random() * 5);
   const tours = [];
+  const address = faker.address;
 
   const accountCreationDate = randomDate(
     new Date(2020, 0, 1),
@@ -37,6 +38,12 @@ const getNewGeneratedUser = () => {
     totalTours,
     accountCreationDate,
     tours,
+    address: {
+      lat: parseFloat(address.latitude()),
+      lng: parseFloat(address.longitude()),
+      city: address.cityName(),
+      country: address.country(),
+    },
   };
 };
 
