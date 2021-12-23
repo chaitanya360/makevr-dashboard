@@ -19,7 +19,7 @@ const getNewGeneratedUser = () => {
   const address = faker.address;
 
   const accountCreationDate = randomDate(
-    new Date(2020, 0, 1),
+    new Date(2021, 7, 1),
     new Date(),
     0,
     24

@@ -41,3 +41,46 @@ footer {
   width: 100%;
   /* The width is the width of the web page */
 }
+
+.details-table {
+  font-size: 1.1rem;
+  max-width: 300px;
+  color: rgb(231, 226, 226);
+}
+
+.details-table td {
+  width: 100%;
+  margin: auto;
+  padding: 0.4rem 2rem;
+}
+
+.details-table tr {
+  border-bottom: 1px solid #57348f !important;
+}
+
+.mini-map {
+  height: 295px;
+}
+
+.mini-map img {
+  width: auto;
+  height: 295px;
+  object-fit: cover;
+}
+
+/* .sidebar {
+  margin-left: 0;
+  margin-top: 0;
+  z-index: 999;
+}
+ */
+
+@media screen and (min-width: 600px) {
+  .navbar-brand {
+    padding-top: 3rem !important;
+  }
+
+  .content {
+    padding-top: 28px !important;
+  }
+}

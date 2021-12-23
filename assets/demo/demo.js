@@ -128,7 +128,7 @@ demo = {
   initDashboardPageCharts: function () {
     const setup = () => {
       var users_count = document.getElementById("users-count");
-      users_count.innerHTML = users.length;
+      users_count.innerHTML = 727;
     };
 
     setup();
@@ -390,72 +390,66 @@ demo = {
       },
     };
 
-    var ctx = document.getElementById("chartLinePurple").getContext("2d");
+    // var ctx = document.getElementById("chartLinePurple").getContext("2d");
 
-    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    // var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, "rgba(72,72,176,0.2)");
-    gradientStroke.addColorStop(0.2, "rgba(72,72,176,0.0)");
-    gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
+    // gradientStroke.addColorStop(1, "rgba(72,72,176,0.2)");
+    // gradientStroke.addColorStop(0.2, "rgba(72,72,176,0.0)");
+    // gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
-    var data = {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
-      datasets: [
-        {
-          label: "Data",
-          fill: true,
-          backgroundColor: gradientStroke,
-          borderColor: "#d048b6",
-          borderWidth: 2,
-          borderDash: [],
-          borderDashOffset: 0.0,
-          pointBackgroundColor: "#d048b6",
-          pointBorderColor: "rgba(255,255,255,0)",
-          pointHoverBackgroundColor: "#d048b6",
-          pointBorderWidth: 20,
-          pointHoverRadius: 4,
-          pointHoverBorderWidth: 15,
-          pointRadius: 4,
-          data: [80, 100, 70, 80, 120, 80],
-        },
-      ],
-    };
+    // var data = {
+    //   labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+    //   datasets: [
+    //     {
+    //       label: "Data",
+    //       fill: true,
+    //       backgroundColor: gradientStroke,
+    //       borderColor: "#d048b6",
+    //       borderWidth: 2,
+    //       borderDash: [],
+    //       borderDashOffset: 0.0,
+    //       pointBackgroundColor: "#d048b6",
+    //       pointBorderColor: "rgba(255,255,255,0)",
+    //       pointHoverBackgroundColor: "#d048b6",
+    //       pointBorderWidth: 20,
+    //       pointHoverRadius: 4,
+    //       pointHoverBorderWidth: 15,
+    //       pointRadius: 4,
+    //       data: [80, 100, 70, 80, 120, 80],
+    //     },
+    //   ],
+    // };
 
-    var myChart = new Chart(ctx, {
-      type: "line",
-      data: data,
-      options: gradientChartOptionsConfigurationWithTooltipPurple,
-    });
+    // var myChart = new Chart(ctx, {
+    //   type: "line",
+    //   data: data,
+    //   options: gradientChartOptionsConfigurationWithTooltipPurple,
+    // });
 
     var ctxGreen = document.getElementById("chartLineGreen").getContext("2d");
 
-    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    // var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
-    gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)");
-    gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)"); //green colors
-    gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
+    // gradientStroke.addColorStop(1, "rgba(66,134,121,0.15)");
+    // gradientStroke.addColorStop(0.4, "rgba(66,134,121,0.0)"); //green colors
+    // gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
+
+    var ctx;
+
+    var gradientStroke;
 
     const usersChart = () => {
-      var chart_labels = [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC",
-      ];
+      var chart_labels = ["AUG", "SEP", "OCT", "NOV", "DEC"];
 
       var chart_data = totalUsersAddedInMonths;
+      // for getting from aug
+      // chart_data = chart_data.slice(7);
+      chart_data = [56, 110, 196, 155, 210];
 
-      var ctx = document.getElementById("chartBig1").getContext("2d");
+      ctx = document.getElementById("chartBig1").getContext("2d");
 
-      var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+      gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
 
       gradientStroke.addColorStop(1, "rgba(72,72,176,0.1)");
       gradientStroke.addColorStop(0.4, "rgba(72,72,176,0.0)");
@@ -490,7 +484,7 @@ demo = {
       $("#users_tab").click(function () {
         var data = myChartData.config.data;
         var ele = document.getElementById("users-count");
-        ele.innerHTML = users.length;
+        ele.innerHTML = 727;
         data.datasets[0].data = chart_data;
         data.labels = chart_labels;
         myChartData.update();
@@ -499,8 +493,11 @@ demo = {
         var ele = document.getElementById("users-count");
         let total_tours = 0;
         users.forEach((user) => (total_tours += user.totalTours));
-        ele.innerHTML = total_tours;
+        ele.innerHTML = 1723;
         var chart_data = totalToursCreatedInMonths;
+        // for getting from aug
+        // chart_data = chart_data.slice(7);
+        chart_data = [120, 150, 287, 446, 720];
         var data = myChartData.config.data;
         data.datasets[0].data = chart_data;
         data.labels = chart_labels;
@@ -511,10 +508,10 @@ demo = {
     usersChart();
 
     var data = {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["AUG", "SEP", "OCT", "NOV"],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Tour Visits",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",
@@ -528,7 +525,7 @@ demo = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [90, 27, 60, 12, 80],
+          data: [3768, 6780, 11352, 13200],
         },
       ],
     };
@@ -547,38 +544,36 @@ demo = {
     //   myChartData.update();
     // });
 
-    var ctx = document.getElementById("CountryChart").getContext("2d");
+    // var ctx = document.getElementById("CountryChart").getContext("2d");
 
-    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    // gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+    // gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+    // gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
-    gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-    gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-    gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
-
-    var myChart = new Chart(ctx, {
-      type: "bar",
-      responsive: true,
-      legend: {
-        display: false,
-      },
-      data: {
-        labels: ["IND", "USA", "GER", "AUS", "UK", "NZ", "BR"],
-        datasets: [
-          {
-            label: "Countries",
-            fill: true,
-            backgroundColor: gradientStroke,
-            hoverBackgroundColor: gradientStroke,
-            borderColor: "#1f8ef1",
-            borderWidth: 2,
-            borderDash: [],
-            borderDashOffset: 0.0,
-            data: [43, 49, 8, 18, 0, 5, 0],
-          },
-        ],
-      },
-      options: gradientBarChartConfiguration,
-    });
+    // var myChart = new Chart(ctx, {
+    //   type: "bar",
+    //   responsive: true,
+    //   legend: {
+    //     display: false,
+    //   },
+    //   data: {
+    //     labels: ["IND", "USA", "GER", "AUS", "UK", "NZ", "BR"],
+    //     datasets: [
+    //       {
+    //         label: "Countries",
+    //         fill: true,
+    //         backgroundColor: gradientStroke,
+    //         hoverBackgroundColor: gradientStroke,
+    //         borderColor: "#1f8ef1",
+    //         borderWidth: 2,
+    //         borderDash: [],
+    //         borderDashOffset: 0.0,
+    //         data: [43, 49, 8, 18, 0, 5, 0],
+    //       },
+    //     ],
+    //   },
+    //   options: gradientBarChartConfiguration,
+    // });
   },
 
   // initGoogleMaps: function () {
@@ -841,24 +836,4 @@ demo = {
   //   // To add the marker to the map, call setMap();
   //   marker.setMap(map);
   // },
-
-  showNotification: function (from, align) {
-    color = Math.floor(Math.random() * 4 + 1);
-
-    $.notify(
-      {
-        icon: "tim-icons icon-bell-55",
-        message:
-          "Welcome to <b>Black Dashboard</b> - a beautiful freebie for every web developer.",
-      },
-      {
-        type: type[color],
-        timer: 8000,
-        placement: {
-          from: from,
-          align: align,
-        },
-      }
-    );
-  },
 };

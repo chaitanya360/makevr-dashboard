@@ -62,13 +62,13 @@
             <li class="active">
               <a href=".">
                 <i class="tim-icons icon-chart-pie-36"></i>
-                <p>Dashboard</p>
+                <p>Overview</p>
               </a>
             </li>
             <li>
               <a href="./pages/usersList.html">
                 <i class="tim-icons icon-notes"></i>
-                <p>Users List</p>
+                <p>Top Creators</p>
               </a>
             </li>
             <li>
@@ -92,120 +92,7 @@
                   <span class="navbar-toggler-bar bar3"></span>
                 </button>
               </div>
-              <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
-            </div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navigation"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-bar navbar-kebab"></span>
-              <span class="navbar-toggler-bar navbar-kebab"></span>
-              <span class="navbar-toggler-bar navbar-kebab"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navigation">
-              <ul class="navbar-nav ml-auto">
-                <li class="search-bar input-group">
-                  <button
-                    class="btn btn-link"
-                    id="search-button"
-                    data-toggle="modal"
-                    data-target="#searchModal"
-                  >
-                    <i class="tim-icons icon-zoom-split"></i>
-                    <span class="d-lg-none d-md-block">Search</span>
-                  </button>
-                </li>
-                <li class="dropdown nav-item">
-                  <a
-                    href="javascript:void(0)"
-                    class="dropdown-toggle nav-link"
-                    data-toggle="dropdown"
-                  >
-                    <div
-                      class="notification d-none d-lg-block d-xl-block"
-                    ></div>
-                    <i class="tim-icons icon-sound-wave"></i>
-                    <p class="d-lg-none">Notifications</p>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
-                    <li class="nav-link">
-                      <a href="#" class="nav-item dropdown-item"
-                        >Mike John responded to your email</a
-                      >
-                    </li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >You have 5 more tasks</a
-                      >
-                    </li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Your friend Michael is in town</a
-                      >
-                    </li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Another notification</a
-                      >
-                    </li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Another one</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown nav-item">
-                  <a
-                    href="#"
-                    class="dropdown-toggle nav-link"
-                    data-toggle="dropdown"
-                  >
-                    <div class="photo">
-                      <img src="../assets/img/anime3.png" alt="Profile Photo" />
-                    </div>
-                    <b class="caret d-none d-lg-block d-xl-block"></b>
-                    <p class="d-lg-none">Log out</p>
-                  </a>
-                  <ul class="dropdown-menu dropdown-navbar">
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Profile</a
-                      >
-                    </li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Settings</a
-                      >
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li class="nav-link">
-                      <a
-                        href="javascript:void(0)"
-                        class="nav-item dropdown-item"
-                        >Log out</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="separator d-lg-none"></li>
-              </ul>
+              <a class="navbar-brand" href="javascript:void(0)">Overview</a>
             </div>
           </div>
         </nav>
@@ -240,6 +127,26 @@
         </div>
         <!-- End Navbar -->
         <div class="content">
+          <div class="card details-table">
+            <!-- <div class="card-header"></div> -->
+            <div class="card-body">
+              <table>
+                <tr class="col-6">
+                  <td>727</td>
+                  <td>Users</td>
+                </tr>
+                <tr class="col-6">
+                  <td>15</td>
+                  <td>Countries</td>
+                </tr>
+                <tr class="col-6">
+                  <td>1723</td>
+                  <td>Tours</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-12">
               <div class="card card-chart">
@@ -249,7 +156,7 @@
                       <h2 class="card-title float-left">Users Added</h2>
                       <div class="float-right">
                         <h4 class="card-category">Total</h4>
-                        <h4 id="users-count" class="card-title">935</h4>
+                        <h4 id="users-count" class="card-title">727</h4>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -316,13 +223,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
               <div class="card card-chart">
                 <div class="card-header">
                   <h5 class="card-category">Total Shipments</h5>
-                  <h3 class="card-title">
-                    <i class="tim-icons icon-bell-55 text-primary"></i> 763,215
-                  </h3>
+                  <h3 class="card-title">763,215</h3>
                 </div>
                 <div class="card-body">
                   <div class="chart-area">
@@ -330,30 +235,25 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-4">
-              <div class="card card-chart">
+              <a class="card card-chart" href="./pages/map2.html">
                 <div class="card-header">
                   <h5 class="card-category">Country-Wise</h5>
-                  <h3 class="card-title">
-                    <i class="tim-icons icon-world text-info"></i>
-                    512
-                  </h3>
                 </div>
-                <div class="card-body">
-                  <div class="chart-area">
+                <div class="card-body mini-map">
+                  <!-- <div class="chart-area">
                     <canvas id="CountryChart"></canvas>
-                  </div>
+                  </div> -->
+                  <img src="./assets/img/mini-map.png" />
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-lg-4">
               <div class="card card-chart">
                 <div class="card-header">
-                  <h5 class="card-category">Completed Tasks</h5>
-                  <h3 class="card-title">
-                    <i class="tim-icons icon-send text-success"></i> 12,100K
-                  </h3>
+                  <h5 class="card-category">Tour Views</h5>
+                  <h3 class="card-title">35100K</h3>
                 </div>
                 <div class="card-body">
                   <div class="chart-area">
