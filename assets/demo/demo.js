@@ -460,7 +460,6 @@ demo = {
           labels: chart_labels,
           datasets: [
             {
-              label: "My First dataset",
               fill: true,
               backgroundColor: gradientStroke,
               borderColor: "#d346b1",

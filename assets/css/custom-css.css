@@ -42,9 +42,13 @@ footer {
   /* The width is the width of the web page */
 }
 
+.details-table .card-body {
+  padding: 5px !important;
+}
+
 .details-table {
   font-size: 1.1rem;
-  max-width: 300px;
+  max-width: 400px;
   color: rgb(231, 226, 226);
 }
 
@@ -52,10 +56,11 @@ footer {
   width: 100%;
   margin: auto;
   padding: 0.4rem 2rem;
+  text-align: center;
 }
 
 .details-table tr {
-  border-bottom: 1px solid #57348f !important;
+  border: 1px solid #523581 !important;
 }
 
 .mini-map {
@@ -80,7 +85,16 @@ footer {
     padding-top: 3rem !important;
   }
 
+  .sidebar {
+    margin-top: 0;
+    margin-left: 0;
+  }
   .content {
     padding-top: 28px !important;
+    transform: translateX(-20px);
+  }
+
+  .navbar-brand {
+    display: none !important;
   }
 }
