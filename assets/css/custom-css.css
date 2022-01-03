@@ -65,11 +65,12 @@ footer {
 
 .mini-map {
   height: 295px;
+  width: 100%;
 }
 
 .mini-map img {
-  width: auto;
-  height: 295px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 

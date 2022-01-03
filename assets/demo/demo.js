@@ -445,7 +445,7 @@ demo = {
       var chart_data = totalUsersAddedInMonths;
       // for getting from aug
       // chart_data = chart_data.slice(7);
-      chart_data = [56, 110, 196, 155, 210];
+      chart_data = [56, 60, 126, 205, 280];
 
       ctx = document.getElementById("chartBig1").getContext("2d");
 
@@ -524,7 +524,7 @@ demo = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [3768, 6780, 11352, 13200],
+          data: [3768, 6780, 9352, 15200],
         },
       ],
     };
