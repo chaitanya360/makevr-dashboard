@@ -23,8 +23,51 @@ const generateUsersTable = () => {
 
   let topCreators = [
     createUser("Anupam", "India", 112, "d96409bf894217686ba124d7356686c9"),
+    createUser(
+      "Ita Rozenblat",
+      "Belgium",
+      43,
+      "fc490ca45c00b1249bbe3554a4fdf6fb"
+    ),
+    createUser(
+      "Luis M Ferreira Feliz",
+      "USA",
+      33,
+      "33e75ff09dd601bbe69f351039152189"
+    ),
     createUser("Mukeshjha", "India", 25, "140f6969d5213fd0ece03148e62e461e"),
+    createUser(
+      "Dave Agyapong",
+      "South Africa",
+      22,
+      "d96409bf894217686ba124d7356686c9"
+    ),
+    createUser("elisabonazza", "Italy", 21, "289dff07669d7a23de0ef88d2f7129e7"),
     createUser("Saurav", "India", 19, "33e75ff09dd601bbe69f351039152189"),
+    createUser(
+      "mikhailkoltsov",
+      "Russia",
+      16,
+      "82aa4b0af34c2313a562076992e50aa3"
+    ),
+    createUser(
+      "Nthabiseng Motaung",
+      "South Africa",
+      17,
+      "33e75ff09dd601bbe69f351039152189"
+    ),
+    createUser(
+      "Abdelkader Benayad",
+      "Algeria",
+      14,
+      "65ded5353c5ee48d0b7d48c591b8f430"
+    ),
+    createUser(
+      "Vladislav Yurchenko",
+      "Russia",
+      12,
+      "a3c65c2974270fd093ee8a9bf8ae7d0b"
+    ),
     createUser("Gautam", "India", 11, "fc490ca45c00b1249bbe3554a4fdf6fb"),
     createUser("Anshul", "India", 10, "a3c65c2974270fd093ee8a9bf8ae7d0b"),
     createUser("Sarvasiddi", "India", 10, "f2217062e9a397a1dca429e7d70bc6ca"),
@@ -34,7 +77,14 @@ const generateUsersTable = () => {
       8,
       "85d8ce590ad8981ca2c8286f79f59954"
     ),
+    createUser("Omar Helfawi", "Syria", 8, "65ded5353c5ee48d0b7d48c591b8f430"),
     createUser("Virendra", "India", 8, "f0935e4cd5920aa6c7c996a5ee53a70f"),
+    createUser(
+      "Hermenegildo Batula",
+      "Phillipines",
+      6,
+      "140f6969d5213fd0ece03148e62e461e"
+    ),
     createUser("Arpit", "India", 6, "9b8619251a19057cff70779273e95aa6"),
     createUser("Shrutikala", "India", 5, "310dcbbf4cce62f762a2aaa148d556bd"),
     createUser("Kashish", "India", 5, "65ded5353c5ee48d0b7d48c591b8f430"),
@@ -43,6 +93,7 @@ const generateUsersTable = () => {
     createUser("Aman", "India", 4, "82aa4b0af34c2313a562076992e50aa3"),
     createUser("Kuldeepsingh", "India", 4, "289dff07669d7a23de0ef88d2f7129e7"),
     createUser("Harleenkaur", "India", 4, "950a4152c2b4aa3ad78bdd6b366cc179"),
+    createUser("Shirish Kurne", "UAE", 2, "950a4152c2b4aa3ad78bdd6b366cc179"),
   ];
 
   topCreators.forEach((user) => {
