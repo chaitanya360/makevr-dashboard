@@ -65,14 +65,14 @@
                 <p>Overview</p>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="./toptours.html">
                 <i class="tim-icons icon-world"></i>
                 <p>Top Tours</p>
               </a>
             </li>
-            <li class="active">
-              <a href=".">
+            <li>
+              <a href="./usersList.html">
                 <i class="tim-icons icon-notes"></i>
                 <p>Top Creators</p>
               </a>
@@ -98,7 +98,7 @@
                   <span class="navbar-toggler-bar bar3"></span>
                 </button>
               </div>
-              <a class="navbar-brand" href="javascript:void(0)">Top Creators</a>
+              <a class="navbar-brand" href="javascript:void(0)">Top Tours</a>
             </div>
           </div>
         </nav>
@@ -137,23 +137,47 @@
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
-                  <h5 class="title">All users data</h5>
+                  <h5 class="title">Top Tours</h5>
                 </div>
                 <div
                   class="card-body all-icons custome-scrollbar"
-                  style="max-height: 80vh; overflow: auto"
+                  style="
+                    max-height: 80vh;
+                    overflow: auto;
+                    background-color: rgb(23, 21, 24);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                  "
+                  id="card-container"
                 >
-                  <table class="table">
-                    <thead>
-                      <th>Name</th>
-                      <th>Country</th>
-                      <th>No. of Tours</th>
-                      <th>Date of Joining</th>
-                      <th>Tour Link</th>
-                    </thead>
-                    <tbody id="users-table-body"></tbody>
-                  </table>
-                </div>
+                  <a
+                    class="card card-user tour-card"
+                    id="tour-card"
+                    style="max-width: 320px; margin: 1rem; max-height: 400px"
+                    href="https://makevr.pro/login/viewer/index.php?code=bac9162b47c56fc8a4d2a519803d51b3"
+                  >
+                    <div
+                      class="card-body"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 0;
+                      "
+                    >
+                      <img
+                        id="tour-img"
+                        src="./images/0.png"
+                        style="width: 100%; height: 80%; object-fit: cover"
+                      />
+                      <div class="author">
+                        <span class="title" style="color: white" id="tour-name"
+                          >VENKATA RAMANA</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -203,10 +227,11 @@
     <script src="../assets/demo/faker.js"></script>
     <script src="../assets/demo/data.js"></script>
     <script src="../assets/demo/demo.js"></script>
-    <script src="../assets/demo/users-table.js"></script>
+    <script src="../assets/demo/tours.js"></script>
     <script>
       $(document).ready(function () {
-        generateUsersTable();
+        // generateUsersTable();
+        generateCards();
         $().ready(function () {
           $sidebar = $(".sidebar");
           $navbar = $(".navbar");

@@ -128,7 +128,7 @@ demo = {
   initDashboardPageCharts: function () {
     const setup = () => {
       var users_count = document.getElementById("users-count");
-      users_count.innerHTML = 727;
+      users_count.innerHTML = 1227;
     };
 
     setup();
@@ -445,7 +445,7 @@ demo = {
       var chart_data = totalUsersAddedInMonths;
       // for getting from aug
       // chart_data = chart_data.slice(7);
-      chart_data = [56, 60, 126, 205, 280];
+      chart_data = [106, 110, 226, 305, 380];
 
       ctx = document.getElementById("chartBig1").getContext("2d");
 
@@ -492,11 +492,11 @@ demo = {
         var ele = document.getElementById("users-count");
         let total_tours = 0;
         users.forEach((user) => (total_tours += user.totalTours));
-        ele.innerHTML = 1723;
+        ele.innerHTML = 1923;
         var chart_data = totalToursCreatedInMonths;
         // for getting from aug
         // chart_data = chart_data.slice(7);
-        chart_data = [120, 150, 287, 446, 720];
+        chart_data = [120, 150, 387, 506, 760];
         var data = myChartData.config.data;
         data.datasets[0].data = chart_data;
         data.labels = chart_labels;
