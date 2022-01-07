@@ -445,7 +445,7 @@ demo = {
       var chart_data = totalUsersAddedInMonths;
       // for getting from aug
       // chart_data = chart_data.slice(7);
-      chart_data = [106, 110, 226, 305, 380];
+      chart_data = [106, 110, 226, 225, 460];
 
       ctx = document.getElementById("chartBig1").getContext("2d");
 
