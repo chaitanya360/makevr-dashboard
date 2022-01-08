@@ -7,17 +7,34 @@ const generateCards = () => {
   });
 
   let topCreators = [
-    createUser("360° TOUR Reception", "18d8042386b79e2c279fd162df0205c8"),
-    createUser("Washroom", "9872ed9fc22fc182d371c3e9ed316094"),
-    createUser("Balcony", "3636638817772e42b59d74cff571fbb3"),
-    createUser("Kartika's Sample VR", "aa942ab2bfa6ebda4840e7360ce6e7ef"),
-    createUser("Office", "5fd0b37cd7dbbb00f97ba6ce92bf5add"),
-    createUser("Residence", "9766527f2b5d3e95d4a733fcfb77bd7e"),
-    createUser("Interior", "9cfdf10e8fc047a44b08ed031e1f0ed1"),
-    createUser("Terrace", "37bc2f75bf1bcfe8450a1a41c200364c"),
-    createUser("RESIDENTIAL HOUSE", "698d51a19d8a121ce581499d7b701668"),
-    createUser("R&Y", "98dce83da57b0395e163467c9dae521b"),
-    createUser("PRESTIGE JINDAL CITY", "06eb61b839a0cefee4967c67ccb099dc"),
+    // createUser("360° TOUR Reception", "18d8042386b79e2c279fd162df0205c8"),
+    // createUser("Washroom", "9872ed9fc22fc182d371c3e9ed316094"),
+    // createUser("Balcony", "3636638817772e42b59d74cff571fbb3"),
+    // createUser("Kartika's Sample VR", "aa942ab2bfa6ebda4840e7360ce6e7ef"),
+    // createUser("Office", "5fd0b37cd7dbbb00f97ba6ce92bf5add"),
+    // createUser("Residence", "9766527f2b5d3e95d4a733fcfb77bd7e"),
+    // createUser("Interior", "9cfdf10e8fc047a44b08ed031e1f0ed1"),
+    // createUser("Terrace", "37bc2f75bf1bcfe8450a1a41c200364c"),
+    // createUser("RESIDENTIAL HOUSE", "698d51a19d8a121ce581499d7b701668"),
+    // createUser("R&Y", "98dce83da57b0395e163467c9dae521b"),
+    // createUser("PRESTIGE JINDAL CITY", "06eb61b839a0cefee4967c67ccb099dc"),
+
+    // new tours
+
+    // first tour is at html
+    // createUser("VENKATA RAMANA", "bac9162b47c56fc8a4d2a519803d51b3"),
+
+    createUser("360° TOUR", "bbf94b34eb32268ada57a3be5062fe7d"),
+    createUser("ALBI'S FLAT", "cb70ab375662576bd1ac5aaf16b3fca4"),
+    createUser("PRESTIGE JINDAL CITY - D3", "06eb61b839a0cefee4967c67ccb099dc"),
+    createUser("4BHK", "d34ab169b70c9dcd35e62896010cd9ff"),
+    createUser("BINASH", "a01a0380ca3c61428c26a231f0e49a09"),
+    createUser("OMAR 3", "cfa0860e83a4c3a763a7e62d825349f7"),
+    createUser("SHIRISH KURANE", "918317b57931b6b7a7d29490fe5ec9f9"),
+    createUser("3RD", "274ad4786c3abca69fa097b85867d9a4"),
+    createUser("Office 360° TOUR", "18d8042386b79e2c279fd162df0205c8"),
+    createUser("11.1 - Artip", "0a09c8844ba8f0936c20bd791130d6b6"),
+    createUser("LIVING AREA -1", "e3796ae838835da0b6f6ea37bcf8bcb7"),
   ];
 
   topCreators.forEach((user, index) => {
@@ -25,7 +42,7 @@ const generateCards = () => {
     newCard.href = `https://makevr.pro/login/viewer/index.php?code=${user.tourLink}`;
     newCard.target = "_blank";
     newCard.style.paddingBottom = "1rem";
-    newCard.children[0].children[0].src = "./images/" + (index + 1) + ".png";
+    newCard.children[0].children[0].src = "./images/" + (index + 13) + ".png";
     newCard.children[0].children[1].children[0].innerHTML = user.name;
 
     console.log(newCard);

@@ -110,22 +110,22 @@ const generateUsersTable = () => {
       " " +
       months[user.accountCreationDate.getMonth()];
 
-    const tableData5 = document.createElement("td");
-    const tourLink = document.createElement("a");
-    tourLink.href =
-      "https://makevr.pro/login/viewer/index.php?code=" + user.tourLink;
-    tourLink.innerHTML = "visit";
+    // const tableData5 = document.createElement("td");
+    // const tourLink = document.createElement("a");
+    // tourLink.href =
+    //   "https://makevr.pro/login/viewer/index.php?code=" + user.tourLink;
+    // tourLink.innerHTML = "visit";
 
-    tourLink.target = "_blank";
-    tourLink.rel = "noopener noreferrer";
+    // tourLink.target = "_blank";
+    // tourLink.rel = "noopener noreferrer";
 
-    tableData5.appendChild(tourLink);
+    // tableData5.appendChild(tourLink);
 
     tableRow.appendChild(tableData1);
     tableRow.appendChild(tableData2);
     tableRow.appendChild(tableData3);
     tableRow.appendChild(tableData4);
-    tableRow.appendChild(tableData5);
+    // tableRow.appendChild(tableData5);
     table.appendChild(tableRow);
   });
 };
