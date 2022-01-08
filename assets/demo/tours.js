@@ -33,7 +33,7 @@ const generateCards = () => {
     createUser("SHIRISH KURANE", "918317b57931b6b7a7d29490fe5ec9f9"),
     createUser("3RD", "274ad4786c3abca69fa097b85867d9a4"),
     createUser("Office 360° TOUR", "18d8042386b79e2c279fd162df0205c8"),
-    createUser("11.1 - Artip", "0a09c8844ba8f0936c20bd791130d6b6"),
+    createUser("11.1 - Arpit", "0a09c8844ba8f0936c20bd791130d6b6"),
     createUser("LIVING AREA -1", "e3796ae838835da0b6f6ea37bcf8bcb7"),
   ];
 
