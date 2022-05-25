@@ -26,7 +26,7 @@ const generateCards = () => {
 
     createUser("WOW SPACES 360° TOUR", "bbf94b34eb32268ada57a3be5062fe7d"),
     createUser(
-      "ALBI'S FLAT (ELISA BONAZZA",
+      "ALBI'S FLAT (ELISA BONAZZA)",
       "cb70ab375662576bd1ac5aaf16b3fca4"
     ),
     createUser("PRESTIGE JINDAL CITY - D3", "06eb61b839a0cefee4967c67ccb099dc"),
