@@ -440,7 +440,7 @@ demo = {
     var gradientStroke;
 
     const usersChart = () => {
-      var chart_labels = ["AUG", "SEP", "OCT", "NOV", "DEC"];
+      var chart_labels = ["DEC", "JAN", "FEB", "MAR", "APR"];
 
       var chart_data = totalUsersAddedInMonths;
       // for getting from aug
@@ -507,7 +507,7 @@ demo = {
     usersChart();
 
     var data = {
-      labels: ["AUG", "SEP", "OCT", "NOV"],
+      labels: ["DEC", "JAN", "FEB", "MAR"],
       datasets: [
         {
           label: "Tour Visits",
