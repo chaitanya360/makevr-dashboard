@@ -28,7 +28,6 @@ const generateCards = () => {
       "Experience Center (Ycaro Rocha)",
       "1595af6435015c77a7149e92a551338e"
     ),
-    createUser("Cathedral (Mike Wade)", "ca9c267dad0305d1a6308d2a0cf1c39c"),
     createUser(
       "ALBI'S FLAT (ELISA BONAZZA)",
       "cb70ab375662576bd1ac5aaf16b3fca4"
@@ -42,10 +41,17 @@ const generateCards = () => {
     createUser("3BHK (OMAR HELFAWI)", "cfa0860e83a4c3a763a7e62d825349f7"),
     createUser("SHIRISH KURANE", "918317b57931b6b7a7d29490fe5ec9f9"),
     createUser("3RD", "274ad4786c3abca69fa097b85867d9a4"),
+    createUser("Dubai Garden Concept", "109a0ca3bc27f3e96597370d5c8cf03d"),
     createUser("Office 360° TOUR", "18d8042386b79e2c279fd162df0205c8"),
     createUser("11.1 - Arpit", "0a09c8844ba8f0936c20bd791130d6b6"),
-    createUser("LIVING AREA -1", "e3796ae8  38835da0b6f6ea37bcf8bcb7"),
+    createUser(
+      "Post War City (Olga Javadova)",
+      "24681928425f5a9133504de568f5f6df"
+    ),
+    // createUser("LIVING AREA -1", "e3796ae8  38835da0b6f6ea37bcf8bcb7"),
+    createUser("Cathedral (Mike Wade)", "ca9c267dad0305d1a6308d2a0cf1c39c"),
     createUser("VENKATA RAMANA", "bac9162b47c56fc8a4d2a519803d51b3"),
+    createUser("Showroom", "3328bdf9a4b9504b9398284244fe97c2"),
     createUser("WOW SPACES 360° TOUR", "bbf94b34eb32268ada57a3be5062fe7d"),
     createUser("PRESTIGE JINDAL CITY - D3", "06eb61b839a0cefee4967c67ccb099dc"),
   ];
@@ -55,7 +61,9 @@ const generateCards = () => {
     newCard.href = `https://makevr.pro/login/viewer/index.php?code=${user.tourLink}`;
     newCard.target = "_blank";
     newCard.style.paddingBottom = "1rem";
-    newCard.children[0].children[0].src = "./images/" + (index + 13) + ".png";
+    newCard.children[0].children[0].src = "./images/" + user.tourLink + ".png";
+    // newCard.children[0].children[0].src =
+    //   "./images/" + (user.img ? user.img : index + 13) + ".png";
     newCard.children[0].children[1].children[0].innerHTML = user.name;
 
     console.log(newCard);
