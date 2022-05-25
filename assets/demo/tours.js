@@ -24,6 +24,7 @@ const generateCards = () => {
     // first tour is at html
     // createUser("VENKATA RAMANA", "bac9162b47c56fc8a4d2a519803d51b3"),
 
+    createUser("Cathedral (Mike Wade)", "ca9c267dad0305d1a6308d2a0cf1c39c"),
     createUser("WOW SPACES 360° TOUR", "bbf94b34eb32268ada57a3be5062fe7d"),
     createUser(
       "ALBI'S FLAT (ELISA BONAZZA)",
@@ -38,8 +39,7 @@ const generateCards = () => {
     createUser("Office 360° TOUR", "18d8042386b79e2c279fd162df0205c8"),
     createUser("11.1 - Arpit", "0a09c8844ba8f0936c20bd791130d6b6"),
     createUser("LIVING AREA -1", "e3796ae8  38835da0b6f6ea37bcf8bcb7"),
-    createUser("Dojo (Olga Javadova)", "fccb3cdc9acc14a6e70a12f74560c026"),
-    createUser("Cathedral (Mike Wade)", "ca9c267dad0305d1a6308d2a0cf1c39c"),
+    createUser("VENKATA RAMANA", "bac9162b47c56fc8a4d2a519803d51b3"),
   ];
 
   topCreators.forEach((user, index) => {
